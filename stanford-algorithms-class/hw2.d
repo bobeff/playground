@@ -23,15 +23,15 @@ uint qsort(uint[] a, uint function(uint[]) choosePivot) {
 
 void main() {
 	uint[] numbers;
-	File finp = File("array0.txt");
+	File finp = File("hw2.txt");
 	foreach (line; finp.byLine())
-		numbers ~= to!uint(chop(line));
+		numbers ~= to!uint(line);
 	writeln(qsort(numbers.dup, function uint(uint[] a) { return 0; }));
 	writeln(qsort(numbers.dup, function uint(uint[] a) { return a.length - 1; }));
 	writeln(qsort(numbers.dup, function uint(uint[] a) {
-				uint m = a.length % 2 == 0 ? a.length / 2 - 1 : a.length / 2;
-				if (a[0] < a[m] && a[m] < a[$ - 1]) return 0;
-				if (a[m] < a[0] && a[0] < a[$ - 1]) return m;
-				return a.length - 1;
+               uint m = a.length % 2 == 0 ? a.length / 2 - 1 : a.length / 2;
+               uint[] order = [0, m, a.length - 1];
+               sort!((int x, int y) { return a[x] < a[y]; })(order);
+               return order[1];
 			}));
 }

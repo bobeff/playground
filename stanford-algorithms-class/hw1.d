@@ -1,12 +1,3 @@
-/* The file "inversions.txt" contains all the 100,000 integers between 1 and 100,000
- * (including both) in some random order (no integer is repeated).
- *
- * Your task is to find the number of inversions in the file given
- * (every row has a single integer between 1 and 100,000).
- *
- * Assume your array is from 1 to 100,000 and ith row of the file gives you the ith entry of the array.
-*/
-
 import std.stdio;
 import std.conv;
 import std.string;
@@ -53,8 +44,8 @@ uint countInversionsSlow(uint[] numbers) {
 
 void main() {
 	uint[] numbers;
-	File finp = File("inversions.txt");
+	File finp = File("hw1.txt");
 	foreach (line; finp.byLine())
-		numbers ~= to!uint(chop(line));
+		numbers ~= to!uint(line);
 	writeln(countInversions(numbers));
 }
