@@ -1,4 +1,5 @@
 import std.stdio;
+import std.c.string;
 
 bool isPrime(T)(T n) {
     for (auto i = 2; i * i <= n; ++i)
@@ -37,4 +38,22 @@ unittest {
     assert(generatePrimes(101) ==
            [2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37, 41,
             43, 47, 53, 59, 61, 67, 71, 73, 79, 83, 89, 97 ]);
+}
+
+bool[] generatePrimesSieve(uint upperBound)
+{
+	bool[] primes = new bool[upperBound];
+	foreach (i; 2 .. upperBound)
+		primes[i] = true;
+	foreach (i; 2 .. upperBound)
+		if (primes[i])
+			for (auto j = 2 * i; j < upperBound; j += i)
+				primes[j] = false;
+	return primes;
+}
+
+unittest {
+	assert(generatePrimesSieve(10) ==
+		// 0      1      2     3     4      5     6      7     8      9
+		[false, false, true, true, false, true, false, true, false, false]);
 }
