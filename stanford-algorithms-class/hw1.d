@@ -46,6 +46,6 @@ void main() {
 	uint[] numbers;
 	File finp = File("hw1.txt");
 	foreach (line; finp.byLine())
-		numbers ~= to!uint(line);
+		numbers ~= to!uint(chomp(line));
 	writeln(countInversions(numbers));
 }

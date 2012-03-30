@@ -25,7 +25,7 @@ void main() {
 	uint[] numbers;
 	File finp = File("hw2.txt");
 	foreach (line; finp.byLine())
-		numbers ~= to!uint(line);
+		numbers ~= to!uint(chomp(line));
 	writeln(qsort(numbers.dup, function uint(uint[] a) { return 0; }));
 	writeln(qsort(numbers.dup, function uint(uint[] a) { return a.length - 1; }));
 	writeln(qsort(numbers.dup, function uint(uint[] a) {
