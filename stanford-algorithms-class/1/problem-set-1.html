@@ -1,0 +1,309 @@
+
+
+
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+<meta charset="utf-8" />
+<title>Quiz Feedback</title>
+
+<link rel="stylesheet" href="https://class.coursera.org/assets/core/css/bootstrap.min.css" />
+<link rel="stylesheet" href="https://class.coursera.org/assets/core/css/main.css" />
+<link rel="stylesheet" href="https://spark-public.s3.amazonaws.com/algo1/static/css/main.css" />
+<link rel="stylesheet" href="https://class.coursera.org/assets/core/css/font-awesome.css" />
+<script type="text/javascript" src="https://class.coursera.org/assets/core/js/jquery.js"></script>
+<script type="text/javascript" src="https://class.coursera.org/assets/core/js/json.js"></script>
+<script type="text/javascript" src="https://class.coursera.org/assets/core/js/hc_fix.js"></script>
+<script src="https://class.coursera.org/assets/core/js/bootstrap/bootstrap-modal.js" type="text/javascript"></script>
+<script src="https://class.coursera.org/assets/core/js/modal_focus.js" type="text/javascript"></script>
+<script src="https://class.coursera.org/assets/core/js/bind_modal_focus.js" type="text/javascript"></script>
+<script src="https://class.coursera.org/assets/app/quiz/js/quiz_timer.js"></script>
+<script src="https://class.coursera.org/assets/core/js/get_query_parameters.js?version=20120326"></script>
+<script src="https://class.coursera.org/assets/app/quiz/js/attempt.js?version=20120326"></script>
+<link rel="stylesheet" href="https://class.coursera.org/assets/app/quiz/css/quiz_questions.css" />
+<script src="https://class.coursera.org/assets/core/js/mathjax2/MathJax.js?config=default"></script>
+<link rel="stylesheet" href="https://class.coursera.org/assets/app/quiz/css/quiz.css" />
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-28377374-1']);
+  _gaq.push(['_setDomainName', 'coursera.org']);
+  _gaq.push(['_setAllowLinker', true]);  
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script><link rel="icon" href="https://spark-public.s3.amazonaws.com/algo1/static/images/favicon.ico" />
+
+</head>
+
+<body>
+
+    <a href="#page-content" class="hidden">Skip Navigation</a>
+
+	
+<div class="topbar">
+    <div class="topbar-inner">
+        <div class="container-fluid"
+                          >
+            <a target="_new" href="http://www.coursera.org/" class="brand">
+				Coursera				<span style="background-color:#387690;padding-top:100px" class="label warning">Beta</span>
+			</a>
+            <ul class="nav secondary-nav">
+                                                    <li style="padding: 10px 10px 11px; color:#BFBFBF; font-size:14px; border-right: solid 1px #333">Ivan Bobev</li>
+                    <li><a href="https://class.coursera.org/algo/class/preferences">Preferences</a></li>
+                    <li><a href="http://www.coursera.org/">All Courses</a></li>
+
+                                        
+                    
+                    <li><a href="https://class.coursera.org/algo/class/aboutus">About</a></li>
+                    <li><a href="https://class.coursera.org/algo/auth/feedback">Contact Us</a></li>
+                    <li><a href="https://class.coursera.org/algo/auth/logout">Logout</a></li>
+                            </ul>
+        </div>
+    </div>
+</div>
+
+
+    <div id="banner-top">
+    	<div id="course-logo-text">
+        	<a href="https://class.coursera.org/algo/class/index">
+        		<img border="0" alt="Design and Analysis of Algorithms I" src="https://spark-public.s3.amazonaws.com/algo1/static/images/course-logo-text.png" />
+        	</a>
+        </div>
+    	<div id="banner-course-info">
+        	<div class="course-instructor-name">Tim Roughgarden</div>
+            <div class="course-time">Associate Professor of Computer Science</div>
+        </div>
+    </div>
+    
+        <div class="container-fluid">
+        <div class="sidebar page-sidebar" id="page-sidebar">
+            <ul style="list-style-type:none;margin-left:0px;">
+		<li>
+        <a href="https://class.coursera.org/algo/class/index"  >
+            <p class="navbar_item navbar_home">Home            </p>
+        </a>
+    </li>
+		<li>
+        <a href="https://class.coursera.org/algo/wiki/view?page=Syllabus"  >
+            <p class="navbar_item navbar_wiki">Syllabus            </p>
+        </a>
+    </li>
+		<li>
+        <a href="https://class.coursera.org/algo/lecture/index"  >
+            <p class="navbar_item navbar_lecture">Video Lectures            </p>
+        </a>
+    </li>
+		<li>
+        <a href="https://class.coursera.org/algo/quiz/index"  >
+            <p class="navbar_item navbar_quiz">Problem Sets            </p>
+        </a>
+    </li>
+		<li>
+        <a href="https://class.coursera.org/algo/quiz/index?quiz_type=homework"  >
+            <p class="navbar_item navbar_quiz">Programming Questions            </p>
+        </a>
+    </li>
+		<li>
+        <a href="https://class.coursera.org/algo/wiki/view?page=TheoryProblems"  >
+            <p class="navbar_item navbar_quiz">Theory Problems            </p>
+        </a>
+    </li>
+		<li>
+        <a href="https://class.coursera.org/algo/forum/index"  >
+            <p class="navbar_item navbar_forum">Discussion Forums            </p>
+        </a>
+    </li>
+		<li>
+        <a href="https://class.coursera.org/algo/wiki/view?page=CourseLogistics"  >
+            <p class="navbar_item navbar_wiki">Course Logistics            </p>
+        </a>
+    </li>
+	</ul>
+        </div>
+        <div class="content page-content" id="page-content">
+            
+
+<h2>
+Feedback &mdash;  
+Problem Set-1</h2>
+
+<h3>You achieved a score of <u>8.00</u> out of <u>8.00</u></h3>
+<form method="post" id="quiz_form">
+
+
+<div class="quiz_question_body">
+<h3 class="quiz_question_number">Question 1</h3>
+<div class="quiz_question_text">3-way-mergesort : Suppose instead of dividing in half at each step of the mergesort, you divide into thirds, sort each third, and finally combine all of them using a three way merge. What is the overall running time of this algorithm ? (Hint - Note that the merge step can still be implemented in $$O(n)$$ time.)</div>
+<div class="quiz_options randomize"></div>
+<table>
+<tr>
+<th>Your Answer</th>
+<th></th>
+<th>Score</th>
+<th>Explanation</th>
+</tr>
+<tr>
+<td>
+<input class="quiz_input" type="radio" name="answer[f56f14036616a2c865473f047acccd59][]" id="gensym_4f7ca0c7affa6" value="86021e53d0466d793addb31a4d025802" checked disabled>$$n \log(n)$$</td>
+<td><img src="https://class.coursera.org/assets/app/quiz/images/tick.png" title="Correct" alt="Correct"></td>
+<td>1.00</td>
+<td>That's correct!  There is still a logarithmic number of levels, and the overall amount of work at each level is still linear.</td>
+</tr>
+<tr>
+<td>Total</td>
+<td></td>
+<td>1.00 / 1.00</td>
+<td></td>
+</tr>
+</table>
+</div><div class="quiz_question_body">
+<h3 class="quiz_question_number">Question 2</h3>
+<div class="quiz_question_text">You are given functions $$f$$ and $$g$$ such that $$f(n)=O(g(n))$$. Is $$f(n)*log_2(f(n)^c) = O(g(n)*log_2(g(n)))$$ ? (Here c is some constant $$\gt 0$$.  You can assume that $$f$$ and $$g$$ are always bigger than 1.</div>
+<div class="quiz_options randomize"></div>
+<table>
+<tr>
+<th>Your Answer</th>
+<th></th>
+<th>Score</th>
+<th>Explanation</th>
+</tr>
+<tr>
+<td>
+<input class="quiz_input" type="radio" name="answer[667c6026600c888ab6b4c4f4942f85e5][]" id="gensym_4f7ca0c7b36a6" value="71fb4273000ad64a02a6b490eb3b718b" checked disabled>True</td>
+<td><img src="https://class.coursera.org/assets/app/quiz/images/tick.png" title="Correct" alt="Correct"></td>
+<td>1.00</td>
+<td>That's correct!  Roughly, because the constant c in the exponent is inside a logarithm, it becomes part of the leading constant and gets suppressed by the big-Oh notation.</td>
+</tr>
+<tr>
+<td>Total</td>
+<td></td>
+<td>1.00 / 1.00</td>
+<td></td>
+</tr>
+</table>
+</div><div class="quiz_question_body">
+<h3 class="quiz_question_number">Question 3</h3>
+<div class="quiz_question_text">Assume again two (positive) functions $$f$$ and $$g$$ such that $$f(n)=O(g(n))$$. Is $$2^{f(n)}=O(2^{g(n)})$$ ? (Multiple answers may be correct.)</div>
+<div class="quiz_options randomize"></div>
+<table>
+<tr>
+<th>Your Answer</th>
+<th></th>
+<th>Score</th>
+<th>Explanation</th>
+</tr>
+<tr>
+<td>
+<input class="quiz_input" type="checkbox" name="answer[820bf66e6bf33884c466ba8673434c5a][]" id="gensym_4f7ca0c7b6ac7" value="dd04e8e11104401d529e56e6488c7da7" checked disabled>Yes if $$f(n) \le g(n)$$ for all sufficiently large $$n$$</td>
+<td><img src="https://class.coursera.org/assets/app/quiz/images/tick.png" title="Correct" alt="Correct"></td>
+<td>0.25</td>
+<td></td>
+</tr>
+<tr>
+<td>
+<input class="quiz_input" type="checkbox" name="answer[820bf66e6bf33884c466ba8673434c5a][]" id="gensym_4f7ca0c7b74a3" value="a7218a99a5fb995af778048cdca59adc" checked disabled>Sometimes</td>
+<td><img src="https://class.coursera.org/assets/app/quiz/images/tick.png" title="Correct" alt="Correct"></td>
+<td>0.25</td>
+<td></td>
+</tr>
+<tr>
+<td>
+<input class="quiz_input" type="checkbox" name="answer[820bf66e6bf33884c466ba8673434c5a][]" id="gensym_4f7ca0c7b7e7b" value="93e226fffcb42d9a257faa1a240baa40" disabled>Never</td>
+<td><img src="https://class.coursera.org/assets/app/quiz/images/tick.png" title="Correct" alt="Correct"></td>
+<td>0.25</td>
+<td>For example, what if f(n)=g(n)?</td>
+</tr>
+<tr>
+<td>
+<input class="quiz_input" type="checkbox" name="answer[820bf66e6bf33884c466ba8673434c5a][]" id="gensym_4f7ca0c7b87f6" value="3a89db6231f95c065f5b7a4764fc3483" disabled>Always</td>
+<td><img src="https://class.coursera.org/assets/app/quiz/images/tick.png" title="Correct" alt="Correct"></td>
+<td>0.25</td>
+<td>What if f(n) = 2n and g(n) = n?</td>
+</tr>
+<tr>
+<td>Total</td>
+<td></td>
+<td>1.00 / 1.00</td>
+<td></td>
+</tr>
+</table>
+</div><div class="quiz_question_body">
+<h3 class="quiz_question_number">Question 4</h3>
+<div class="quiz_question_text">k-way-mergesort. Suppose you are given k sorted arrays, each with n elements, and you want to combine them into a single array of kn elements. Consider the following approach. Using the merge subroutine taught in lecture, you merge the first 2 arrays, then merge the $$3^{rd}$$ given array with this merged version of the first two arrays, and so on until you merge in the final ($$k^{th}$$) input array. What is the time taken for this strategy, as a function of k and n ? (Optional: can you think of a faster way to do the k-way merge procedure ?)</div>
+<div class="quiz_options randomize"></div>
+<table>
+<tr>
+<th>Your Answer</th>
+<th></th>
+<th>Score</th>
+<th>Explanation</th>
+</tr>
+<tr>
+<td>
+<input class="quiz_input" type="radio" name="answer[d066d5f9d4b466423411494fb7e972c3][]" id="gensym_4f7ca0c7bbcbb" value="c4d3a97e977ad4cc456e1b27a13fa359" checked disabled>$$\theta(nk^2)$$</td>
+<td><img src="https://class.coursera.org/assets/app/quiz/images/tick.png" title="Correct" alt="Correct"></td>
+<td>1.00</td>
+<td>That's correct!  For the upper bound, the merged list size is always O(kn), merging is linear in the size of the larger array, and there are k iterations.  For the lower bound, each of the last k/2 merges takes Omega(kn) time.</td>
+</tr>
+<tr>
+<td>Total</td>
+<td></td>
+<td>1.00 / 1.00</td>
+<td></td>
+</tr>
+</table>
+</div><div class="quiz_question_body">
+<h3 class="quiz_question_number">Question 5</h3>
+<div style="float:none;text-align:left;width:100%"> <div class="quiz_question_text">Arrange the following functions in increasing order of growth rate. ie. if $$g(n)$$ follows $$f(n)$$ in your list, then $$f(n)$$ is necessarily $$O(g(n))$$. <br><br>
+
+a)$$\sqrt n$$<br>
+b)$$10^n$$<br>
+c)$$n^{1.5}$$<br>
+d)$$2^\sqrt{\log(n)}$$<br>
+e)$$n^{5/3}$$<br><br>
+
+Write your answer, ie. the sequence (in lower case letters) in the space provided (ie. if you feel the answer is a-&gt;b-&gt;c-&gt;d-&gt;e, just write abcde in the space provided without any spaces before / after / in between the string)</div>
+</div>
+<label for="gensym_4f7ca0c7be185" class="hidden">Short Answer Question</label><div class="quiz_options"></div>
+<textarea id="gensym_4f7ca0c7be185" class="quiz_input" name="answer[fa83ea3021ba1f55689457ddb6c7a6fd][answer]" readonly>daceb</textarea><table>
+<tr>
+<th>Your Answer</th>
+<th></th>
+<th>Score</th>
+<th>Explanation</th>
+</tr>
+<tr>
+<td class="student_answer">daceb</td>
+<td><img src="https://class.coursera.org/assets/app/quiz/images/tick.png"></td>
+<td>4.00</td>
+<td></td>
+</tr>
+<tr>
+<td>Total</td>
+<td></td>
+<td>4.00 / 4.00</td>
+<td></td>
+</tr>
+</table>
+<div class="quiz_question_explanation">One approach is to graph these functions for large values of n.  Once in a while this can be misleading, however.  Another useful trick is to take logarithms and see what happens (though again be careful, as in Question 3).</div>
+</div>
+<div class="quiz_submit_button_div">
+</div>
+
+</form>
+        </div>
+    </div>
+            <div class="hidden">
+        This page features MathJax technology to render mathematical formulae.
+        If you are using a screen reader, please visit <a href="http://www.dessci.com/en/products/mathplayer/">MathPlayer</a> to download the plugin for your browser. Please note that this is an Internet Explorer-only plugin at this time.
+    </div>
+</body>
+
+</html>

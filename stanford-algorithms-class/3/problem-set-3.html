@@ -1,0 +1,327 @@
+
+
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+<meta charset="utf-8" />
+<title>Quiz Feedback</title>
+
+<link rel="stylesheet" href="https://class.coursera.org/assets/core/css/bootstrap.min.css" />
+<link rel="stylesheet" href="https://class.coursera.org/assets/core/css/main.css" />
+<link rel="stylesheet" href="https://spark-public.s3.amazonaws.com/algo1/static/css/main.css" />
+<link rel="stylesheet" href="https://class.coursera.org/assets/core/css/font-awesome.css" />
+<script type="text/javascript" src="https://class.coursera.org/assets/core/js/jquery.js"></script>
+<script type="text/javascript" src="https://class.coursera.org/assets/core/js/json.js"></script>
+<script type="text/javascript" src="https://class.coursera.org/assets/core/js/hc_fix.js"></script>
+<script src="https://class.coursera.org/assets/core/js/bootstrap/bootstrap-modal.js" type="text/javascript"></script>
+<script src="https://class.coursera.org/assets/core/js/modal_focus.js" type="text/javascript"></script>
+<script src="https://class.coursera.org/assets/core/js/bind_modal_focus.js" type="text/javascript"></script>
+<script src="https://class.coursera.org/assets/app/quiz/js/quiz_timer.js"></script>
+<script src="https://class.coursera.org/assets/core/js/get_query_parameters.js?version=20120326"></script>
+<script src="https://class.coursera.org/assets/app/quiz/js/attempt.js?version=20120326"></script>
+<link rel="stylesheet" href="https://class.coursera.org/assets/app/quiz/css/quiz_questions.css" />
+<script src="https://class.coursera.org/assets/core/js/mathjax2/MathJax.js?config=default"></script>
+<link rel="stylesheet" href="https://class.coursera.org/assets/app/quiz/css/quiz.css" />
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-28377374-1']);
+  _gaq.push(['_setDomainName', 'coursera.org']);
+  _gaq.push(['_setAllowLinker', true]);  
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script><link rel="icon" href="https://spark-public.s3.amazonaws.com/algo1/static/images/favicon.ico" />
+
+</head>
+
+<body>
+
+    <a href="#page-content" class="hidden">Skip Navigation</a>
+
+	
+<div class="topbar">
+    <div class="topbar-inner">
+        <div class="container-fluid"
+                          >
+            <a target="_new" href="http://www.coursera.org/" class="brand">
+				Coursera				<span style="background-color:#387690;padding-top:100px" class="label warning">Beta</span>
+			</a>
+            <ul class="nav secondary-nav">
+                                                    <li style="padding: 10px 10px 11px; color:#BFBFBF; font-size:14px; border-right: solid 1px #333">Ivan Bobev</li>
+                    <li><a href="https://class.coursera.org/algo/class/preferences">Preferences</a></li>
+                    <li><a href="http://www.coursera.org/">All Courses</a></li>
+
+                                        
+                    
+                    <li><a href="https://class.coursera.org/algo/class/aboutus">About</a></li>
+                    <li><a href="https://class.coursera.org/algo/auth/feedback">Contact Us</a></li>
+                    <li><a href="https://class.coursera.org/algo/auth/logout">Logout</a></li>
+                            </ul>
+        </div>
+    </div>
+</div>
+
+
+    <div id="banner-top">
+    	<div id="course-logo-text">
+        	<a href="https://class.coursera.org/algo/class/index">
+        		<img border="0" alt="Design and Analysis of Algorithms I" src="https://spark-public.s3.amazonaws.com/algo1/static/images/course-logo-text.png" />
+        	</a>
+        </div>
+    	<div id="banner-course-info">
+        	<div class="course-instructor-name">Tim Roughgarden</div>
+            <div class="course-time">Associate Professor of Computer Science</div>
+        </div>
+    </div>
+    
+        <div class="container-fluid">
+        <div class="sidebar page-sidebar" id="page-sidebar">
+            <ul style="list-style-type:none;margin-left:0px;">
+		<li>
+        <a href="https://class.coursera.org/algo/class/index"  >
+            <p class="navbar_item navbar_home">Home            </p>
+        </a>
+    </li>
+		<li>
+        <a href="https://class.coursera.org/algo/wiki/view?page=Syllabus"  >
+            <p class="navbar_item navbar_wiki">Syllabus            </p>
+        </a>
+    </li>
+		<li>
+        <a href="https://class.coursera.org/algo/lecture/index"  >
+            <p class="navbar_item navbar_lecture">Video Lectures            </p>
+        </a>
+    </li>
+		<li>
+        <a href="https://class.coursera.org/algo/quiz/index"  >
+            <p class="navbar_item navbar_quiz">Problem Sets            </p>
+        </a>
+    </li>
+		<li>
+        <a href="https://class.coursera.org/algo/quiz/index?quiz_type=homework"  >
+            <p class="navbar_item navbar_quiz">Programming Questions            </p>
+        </a>
+    </li>
+		<li>
+        <a href="https://class.coursera.org/algo/wiki/view?page=TheoryProblems"  >
+            <p class="navbar_item navbar_quiz">Theory Problems            </p>
+        </a>
+    </li>
+		<li>
+        <a href="https://class.coursera.org/algo/forum/index"  >
+            <p class="navbar_item navbar_forum">Discussion Forums            </p>
+        </a>
+    </li>
+		<li>
+        <a href="https://class.coursera.org/algo/wiki/view?page=CourseLogistics"  >
+            <p class="navbar_item navbar_wiki">Course Logistics            </p>
+        </a>
+    </li>
+	</ul>
+        </div>
+        <div class="content page-content" id="page-content">
+            
+
+<h2>
+Feedback &mdash;  
+Problem Set-3</h2>
+
+<h3>You achieved a score of <u>7.00</u> out of <u>8.00</u></h3>
+<form method="post" id="quiz_form">
+
+
+<div class="quiz_question_body">
+<h3 class="quiz_question_number">Question 1</h3>
+<div class="quiz_question_text">How many min cuts are there in a tree with $$n$$ nodes (ie. $$n-1$$ edges) ?</div>
+<div class="quiz_options randomize"></div>
+<table>
+<tr>
+<th>Your Answer</th>
+<th></th>
+<th>Score</th>
+<th>Explanation</th>
+</tr>
+<tr>
+<td>
+<input class="quiz_input" type="radio" name="answer[58e6d5c9098003e5ad04238d25e7918e][]" id="gensym_4f7ca367cec3e" value="2d2e145e4298eddcab9ee217a65d27d7" checked disabled>$$n-1$$</td>
+<td><img src="https://class.coursera.org/assets/app/quiz/images/tick.png" title="Correct" alt="Correct"></td>
+<td>1.00</td>
+<td>Each edge defines a distinct minimum cut (with one crossing edge).</td>
+</tr>
+<tr>
+<td>Total</td>
+<td></td>
+<td>1.00 / 1.00</td>
+<td></td>
+</tr>
+</table>
+</div><div class="quiz_question_body">
+<h3 class="quiz_question_number">Question 2</h3>
+<div class="quiz_question_text">Let "output" denote the cut output by Karger's min cut algorithm, and let $$p = \frac{1}{n\choose 2}$$. Which of the following statements are true ?
+
+Hint: if you're having trouble with this question, you might want to watch the short optional video on "Counting Minimum Cuts".</div>
+<div class="quiz_options randomize"></div>
+<table>
+<tr>
+<th>Your Answer</th>
+<th></th>
+<th>Score</th>
+<th>Explanation</th>
+</tr>
+<tr>
+<td>
+<input class="quiz_input" type="checkbox" name="answer[c28725ddb5eeb71247fa87654047bf11][]" id="gensym_4f7ca367d1de5" value="d613cc786bcf04a64b3d84ed09fb0b4f" disabled>For every graph $$G$$ with $$n$$ nodes, there exists a min cut $$(A,B)$$ such that
+<br><br>
+$$Pr[out = (A,B)] \le p$$.</td>
+<td><img src="https://class.coursera.org/assets/app/quiz/images/tick.png" title="Correct" alt="Correct"></td>
+<td>0.40</td>
+<td>Recall the first problem of this problem set.</td>
+</tr>
+<tr>
+<td>
+<input class="quiz_input" type="checkbox" name="answer[c28725ddb5eeb71247fa87654047bf11][]" id="gensym_4f7ca367d28b6" value="f5c53707d5d97bbaea1af7fc25d9bbb2" disabled>For every graph $$G$$ with $$n$$ nodes and every min cut $$(A,B)$$,
+<br><br>
+$$Pr[out = (A,B)] \le p$$.</td>
+<td><img src="https://class.coursera.org/assets/app/quiz/images/tick.png" title="Correct" alt="Correct"></td>
+<td>0.40</td>
+<td>Recall the first problem of this problem set.</td>
+</tr>
+<tr>
+<td>
+<input class="quiz_input" type="checkbox" name="answer[c28725ddb5eeb71247fa87654047bf11][]" id="gensym_4f7ca367d34f4" value="307511bf32d5d35a5aa5ea15c66978be" checked disabled>For every graph $$G$$ with $$n$$ nodes, there exists a min cut $$(A,B)$$ of $$G$$ such that
+<br><br>
+$$Pr[out = (A,B)] \ge p$$.</td>
+<td><img src="https://class.coursera.org/assets/app/quiz/images/tick.png" title="Correct" alt="Correct"></td>
+<td>0.40</td>
+<td>This is even weaker than what we proved in the lecture video.</td>
+</tr>
+<tr>
+<td>
+<input class="quiz_input" type="checkbox" name="answer[c28725ddb5eeb71247fa87654047bf11][]" id="gensym_4f7ca367d3faa" value="fb8382af97871608bd44fc0c27d697d1" checked disabled>For every graph $$G$$ with $$n$$ nodes and every min cut $$(A,B)$$ of $$G$$,
+<br><br>
+$$Pr[out = (A,B)] \ge p$$.</td>
+<td><img src="https://class.coursera.org/assets/app/quiz/images/tick.png" title="Correct" alt="Correct"></td>
+<td>0.40</td>
+<td>This is exactly what we proved in the lecture video.</td>
+</tr>
+<tr>
+<td>
+<input class="quiz_input" type="checkbox" name="answer[c28725ddb5eeb71247fa87654047bf11][]" id="gensym_4f7ca367d49fc" value="d3afaabe57ba41fe6c419e18f95a54e7" checked disabled>There exists a graph $$G$$ with $$n$$ nodes and a min cut $$(A,B)$$ of $$G$$ such that
+<br><br>
+$$Pr[out = (A,B)] \le p$$.</td>
+<td><img src="https://class.coursera.org/assets/app/quiz/images/tick.png" title="Correct" alt="Correct"></td>
+<td>0.40</td>
+<td>An $$n$$-cycle works.</td>
+</tr>
+<tr>
+<td>Total</td>
+<td></td>
+<td>2.00 / 2.00</td>
+<td></td>
+</tr>
+</table>
+</div><div class="quiz_question_body">
+<h3 class="quiz_question_number">Question 3</h3>
+<div class="quiz_question_text">Let $$.5\lt \alpha \lt 1$$ be some constant. Suppose you are looking for the median element in an array using RANDOMIZED SELECT (as explained in lectures). What is the probability that after the first iteration the size of the subarray in which the element you are looking for lies  is $$\le \alpha$$ times the size of the original array?</div>
+<div class="quiz_options randomize"></div>
+<table>
+<tr>
+<th>Your Answer</th>
+<th></th>
+<th>Score</th>
+<th>Explanation</th>
+</tr>
+<tr>
+<td>
+<input class="quiz_input" type="radio" name="answer[5c1e37315e44574739b3556a098b94ec][]" id="gensym_4f7ca367d846c" value="e251860ea099fc3bb41f118f88dfb44b" checked disabled>$$\alpha-\frac{1}{2}$$</td>
+<td><img src="https://class.coursera.org/assets/app/quiz/images/cross.png" title="Incorrect" alt="Incorrect"></td>
+<td>0.00</td>
+<td>Have you missed one side of the argument ?</td>
+</tr>
+<tr>
+<td>Total</td>
+<td></td>
+<td>0.00 / 1.00</td>
+<td></td>
+</tr>
+</table>
+</div><div class="quiz_question_body">
+<h3 class="quiz_question_number">Question 4</h3>
+<div class="quiz_question_text">Let $$0\lt \alpha \lt 1$$ be a constant, independent of $$n$$.  Consider an execution of RSelect in which you always manage to throw out at least a $$1-\alpha$$ fraction of the remaining elements before you recurse.  What is the maximum number of recursive calls you'll make before terminating?</div>
+<div class="quiz_options randomize"></div>
+<table>
+<tr>
+<th>Your Answer</th>
+<th></th>
+<th>Score</th>
+<th>Explanation</th>
+</tr>
+<tr>
+<td>
+<input class="quiz_input" type="radio" name="answer[70cb612986c09f1054cb8fd3cf658ae3][]" id="gensym_4f7ca367dbfe9" value="ad2ad6f693737536609ca7a0a8538e71" checked disabled>$$-\frac{\log(n)}{\log(\alpha)}$$</td>
+<td><img src="https://class.coursera.org/assets/app/quiz/images/tick.png" title="Correct" alt="Correct"></td>
+<td>2.00</td>
+<td>Equivalently, log base 1/alpha of n.</td>
+</tr>
+<tr>
+<td>Total</td>
+<td></td>
+<td>2.00 / 2.00</td>
+<td></td>
+</tr>
+</table>
+</div><div class="quiz_question_body">
+<h3 class="quiz_question_number">Question 5</h3>
+<div class="quiz_question_text">The minimum s-t cut problem is the following.  The input is an undirected graph, and two distinct vertices of the graph are labelled "s" and "t".  The goal is to compute the minimum cut (i.e., fewest number of crossing edges) that satisfies the property that s and t are on different sides of the cut.
+<p>
+
+Suppose someone gives you a subroutine for this s-t minimum cut problem via an API.  Your job is to solve the original minimum cut problem (the one discussed in the lectures), when all you can do is invoke the given min s-t cut subroutine.  (That is, the goal is to reduce the min cut problem to the min s-t cut problem.)
+
+</p>
+<p>
+Now suppose you are given an instance of the minimum cut problem -- that is, you are given an undirected graph (with no specially labelled vertices) and need to compute the minimum cut.  What is the minimum number of times that you need to call the given min s-t cut subroutine to guarantee that you'll find a min cut of the given graph?
+</p>
+</div>
+<div class="quiz_options randomize"></div>
+<table>
+<tr>
+<th>Your Answer</th>
+<th></th>
+<th>Score</th>
+<th>Explanation</th>
+</tr>
+<tr>
+<td>
+<input class="quiz_input" type="radio" name="answer[1a99e08b635738981b19c3925b1942f0][]" id="gensym_4f7ca367df747" value="93bb6bd5517b0cabeac7eb76fec44b1b" checked disabled>$$n-1$$</td>
+<td><img src="https://class.coursera.org/assets/app/quiz/images/tick.png" title="Correct" alt="Correct"></td>
+<td>2.00</td>
+<td>Call an arbitrary vertex s, let t range over all other n-1 vertices, and return the best of the s-t min cuts founds.</td>
+</tr>
+<tr>
+<td>Total</td>
+<td></td>
+<td>2.00 / 2.00</td>
+<td></td>
+</tr>
+</table>
+</div>
+<div class="quiz_submit_button_div">
+</div>
+
+</form>
+        </div>
+    </div>
+            <div class="hidden">
+        This page features MathJax technology to render mathematical formulae.
+        If you are using a screen reader, please visit <a href="http://www.dessci.com/en/products/mathplayer/">MathPlayer</a> to download the plugin for your browser. Please note that this is an Internet Explorer-only plugin at this time.
+    </div>
+</body>
+
+</html>
