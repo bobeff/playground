@@ -1,0 +1,311 @@
+
+
+
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+<meta charset="utf-8" />
+<title>Quiz Feedback</title>
+
+<link rel="stylesheet" href="https://class.coursera.org/assets/core/css/bootstrap.min.css" />
+<link rel="stylesheet" href="https://class.coursera.org/assets/core/css/main.css" />
+<link rel="stylesheet" href="https://spark-public.s3.amazonaws.com/algo1/static/css/main.css" />
+<link rel="stylesheet" href="https://class.coursera.org/assets/core/css/font-awesome.css" />
+<script type="text/javascript" src="https://class.coursera.org/assets/core/js/jquery.js"></script>
+<script type="text/javascript" src="https://class.coursera.org/assets/core/js/json.js"></script>
+<script type="text/javascript" src="https://class.coursera.org/assets/core/js/hc_fix.js"></script>
+<script src="https://class.coursera.org/assets/core/js/bootstrap/bootstrap-modal.js" type="text/javascript"></script>
+<script src="https://class.coursera.org/assets/core/js/modal_focus.js" type="text/javascript"></script>
+<script src="https://class.coursera.org/assets/core/js/bind_modal_focus.js" type="text/javascript"></script>
+<script src="https://class.coursera.org/assets/app/quiz/js/quiz_timer.js"></script>
+<script src="https://class.coursera.org/assets/core/js/get_query_parameters.js?version=20120326"></script>
+<script src="https://class.coursera.org/assets/app/quiz/js/attempt.js?version=20120326"></script>
+<link rel="stylesheet" href="https://class.coursera.org/assets/app/quiz/css/quiz_questions.css" />
+<script src="https://class.coursera.org/assets/core/js/mathjax2/MathJax.js?config=default"></script>
+<link rel="stylesheet" href="https://class.coursera.org/assets/app/quiz/css/quiz.css" />
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-28377374-1']);
+  _gaq.push(['_setDomainName', 'coursera.org']);
+  _gaq.push(['_setAllowLinker', true]);  
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script><link rel="icon" href="https://spark-public.s3.amazonaws.com/algo1/static/images/favicon.ico" />
+
+</head>
+
+<body>
+
+    <a href="#page-content" class="hidden">Skip Navigation</a>
+
+	
+<div class="topbar">
+    <div class="topbar-inner">
+        <div class="container-fluid"
+                          >
+            <a target="_new" href="http://www.coursera.org/" class="brand">
+				Coursera				<span style="background-color:#387690;padding-top:100px" class="label warning">Beta</span>
+			</a>
+            <ul class="nav secondary-nav">
+                                                    <li style="padding: 10px 10px 11px; color:#BFBFBF; font-size:14px; border-right: solid 1px #333">Ivan Bobev</li>
+                    <li><a href="https://class.coursera.org/algo/class/preferences">Preferences</a></li>
+                    <li><a href="http://www.coursera.org/">All Courses</a></li>
+
+                                        
+                    
+                    <li><a href="https://class.coursera.org/algo/class/aboutus">About</a></li>
+                    <li><a href="https://class.coursera.org/algo/auth/feedback">Contact Us</a></li>
+                    <li><a href="https://class.coursera.org/algo/auth/logout">Logout</a></li>
+                            </ul>
+        </div>
+    </div>
+</div>
+
+
+    <div id="banner-top">
+    	<div id="course-logo-text">
+        	<a href="https://class.coursera.org/algo/class/index">
+        		<img border="0" alt="Design and Analysis of Algorithms I" src="https://spark-public.s3.amazonaws.com/algo1/static/images/course-logo-text.png" />
+        	</a>
+        </div>
+    	<div id="banner-course-info">
+        	<div class="course-instructor-name">Tim Roughgarden</div>
+            <div class="course-time">Associate Professor of Computer Science</div>
+        </div>
+    </div>
+    
+        <div class="container-fluid">
+        <div class="sidebar page-sidebar" id="page-sidebar">
+            <ul style="list-style-type:none;margin-left:0px;">
+		<li>
+        <a href="https://class.coursera.org/algo/class/index"  >
+            <p class="navbar_item navbar_home">Home            </p>
+        </a>
+    </li>
+		<li>
+        <a href="https://class.coursera.org/algo/wiki/view?page=Syllabus"  >
+            <p class="navbar_item navbar_wiki">Syllabus            </p>
+        </a>
+    </li>
+		<li>
+        <a href="https://class.coursera.org/algo/lecture/index"  >
+            <p class="navbar_item navbar_lecture">Video Lectures            </p>
+        </a>
+    </li>
+		<li>
+        <a href="https://class.coursera.org/algo/quiz/index"  >
+            <p class="navbar_item navbar_quiz">Problem Sets            </p>
+        </a>
+    </li>
+		<li>
+        <a href="https://class.coursera.org/algo/quiz/index?quiz_type=homework"  >
+            <p class="navbar_item navbar_quiz">Programming Questions            </p>
+        </a>
+    </li>
+		<li>
+        <a href="https://class.coursera.org/algo/wiki/view?page=TheoryProblems"  >
+            <p class="navbar_item navbar_quiz">Theory Problems            </p>
+        </a>
+    </li>
+		<li>
+        <a href="https://class.coursera.org/algo/forum/index"  >
+            <p class="navbar_item navbar_forum">Discussion Forums            </p>
+        </a>
+    </li>
+		<li>
+        <a href="https://class.coursera.org/algo/wiki/view?page=CourseLogistics"  >
+            <p class="navbar_item navbar_wiki">Course Logistics            </p>
+        </a>
+    </li>
+	</ul>
+        </div>
+        <div class="content page-content" id="page-content">
+            
+
+<h2>
+Feedback &mdash;  
+Problem Set-4</h2>
+
+<h3>You achieved a score of <u>8.00</u> out of <u>8.00</u></h3>
+<form method="post" id="quiz_form">
+
+
+<div class="quiz_question_body">
+<h3 class="quiz_question_number">Question 1</h3>
+<div class="quiz_question_text">Given an adjacency-list representation of a directed graph, where each vertex maintains an array of its outgoing edges (but *not* its incoming edges), how long does it take, in the worst case, to compute the in-degree of a given vertex?  As usual, we use $$n$$ and $$m$$ to denote the number of vertices and edges, respectively, of the given graph.  Also, let $$k$$ denote the maximum in-degree of a vertex. (Recall that the in-degree of a vertex is the number of edges that enter it.)</div>
+<div class="quiz_options randomize"></div>
+<table>
+<tr>
+<th>Your Answer</th>
+<th></th>
+<th>Score</th>
+<th>Explanation</th>
+</tr>
+<tr>
+<td>
+<input class="quiz_input" type="radio" name="answer[1121d8d536503476a39b9ec793f1b851][]" id="gensym_4f8093e01fb68" value="987cbd7cdd51fbda1407f39ce56ec171" checked disabled>$$\theta(m)$$</td>
+<td><img src="https://class.coursera.org/assets/app/quiz/images/tick.png" title="Correct" alt="Correct"></td>
+<td>1.00</td>
+<td>Without explicitly maintaining a list of incoming edges, you might have to scan all the edges to identify the incoming arcs.</td>
+</tr>
+<tr>
+<td>Total</td>
+<td></td>
+<td>1.00 / 1.00</td>
+<td></td>
+</tr>
+</table>
+</div><div class="quiz_question_body">
+<h3 class="quiz_question_number">Question 2</h3>
+<div class="quiz_question_text">Consider the following problem: given an undirected graph $$G$$ with $$n$$ vertices and $$m$$ edges, and two vertices $$s$$ and $$t$$, does there exist at least one $$s$$-$$t$$ path?
+<br>
+If $$G$$ is given in its adjacency list representation, then the above problem can be solved in $$O(m+n)$$ time, using BFS or DFS.  (Make sure you see why this is true.)
+<br>
+Suppose instead that $$G$$ is given in its adjacency *matrix* representation.  What running time is required, in the worst case, to solve the computational problem stated above?  (Assume that $$G$$ has no parallel edges.)</div>
+<div class="quiz_options randomize"></div>
+<table>
+<tr>
+<th>Your Answer</th>
+<th></th>
+<th>Score</th>
+<th>Explanation</th>
+</tr>
+<tr>
+<td>
+<input class="quiz_input" type="radio" name="answer[f117961564f0ed6a0a4d748557b5dec2][]" id="gensym_4f8093e0236b7" value="ab8ce7e59bf18760dd9affb530636e43" checked disabled>$$\theta(n^2)$$</td>
+<td><img src="https://class.coursera.org/assets/app/quiz/images/tick.png" title="Correct" alt="Correct"></td>
+<td>1.00</td>
+<td>For the lower bound, observe that you might need to look at every entry of the adjacency matrix (e.g., if it has only one "1" and the rest are zeroes).  One easy way to prove the upper bound is to first build an adjacency list representation (in $$\Theta(n^2)$$ time, with a single scan over the given adjacency matrix) and then run BFS or DFS as in the video lectures.</td>
+</tr>
+<tr>
+<td>Total</td>
+<td></td>
+<td>1.00 / 1.00</td>
+<td></td>
+</tr>
+</table>
+<div class="quiz_question_explanation">Hint: for the lower bound, consider the special case in which $$G$$ has only one edge.</div>
+</div><div class="quiz_question_body">
+<h3 class="quiz_question_number">Question 3</h3>
+<div class="quiz_question_text">This problem explores the relationship between two definitions about graph distances.  In this problem, we consider only graphs that are undirected and connected.  The <em>diameter</em> of a graph is the maximum, over all choices of vertices $$s$$ and $$t$$, of the shortest-path distance between $$s$$ and $$t$$.  (Recall the shortest-path distance between $$s$$ and $$t$$ is the fewest number of edges in an $$s$$-$$t$$ path.)  
+<br>
+Next, for a vertex $$s$$, let $$l(s)$$ denote the maximum, over all vertices $$t$$, of the shortest-path distance between $$s$$ and $$t$$.  The <em>radius</em> of a graph is the minimum of $$l(s)$$ over all choices of the vertex $$s$$.
+<br>
+ Which of the following inequalities always hold (i.e., in every undirected connected graph) for the radius $$r$$ and the diamter $$d$$?  [Select all that apply.]</div>
+<div class="quiz_options randomize"></div>
+<table>
+<tr>
+<th>Your Answer</th>
+<th></th>
+<th>Score</th>
+<th>Explanation</th>
+</tr>
+<tr>
+<td>
+<input class="quiz_input" type="checkbox" name="answer[88fb7f4affbc6e4dbea62ee574641f1d][]" id="gensym_4f8093e026e96" value="5e4ff14b2d8be3edf1f5af79bc896353" disabled>$$r\ge d$$</td>
+<td><img src="https://class.coursera.org/assets/app/quiz/images/tick.png" title="Correct" alt="Correct"></td>
+<td>0.50</td>
+<td>A path is a counterexample.</td>
+</tr>
+<tr>
+<td>
+<input class="quiz_input" type="checkbox" name="answer[88fb7f4affbc6e4dbea62ee574641f1d][]" id="gensym_4f8093e0278ca" value="16a8fcbd17e83f6f7b0671dedbcddf9a" checked disabled>$$r\ge d/2$$</td>
+<td><img src="https://class.coursera.org/assets/app/quiz/images/tick.png" title="Correct" alt="Correct"></td>
+<td>0.50</td>
+<td>Let $$c$$ minimize $$l(s)$$ over all vertices $$s$$.  Since every pair of vertices $$s$$ and $$t$$ have paths to $$c$$ with at most $$r$$ edges, stitching these paths together yields an $$s$$-$$t$$ with only $$2r$$ edges; of course, the shortest $$s$$-$$t$$ path is only shorter.</td>
+</tr>
+<tr>
+<td>
+<input class="quiz_input" type="checkbox" name="answer[88fb7f4affbc6e4dbea62ee574641f1d][]" id="gensym_4f8093e02830c" value="c42a5b46b596b098d20bb5e4707aad4c" checked disabled>$$r\le d$$</td>
+<td><img src="https://class.coursera.org/assets/app/quiz/images/tick.png" title="Correct" alt="Correct"></td>
+<td>0.50</td>
+<td>By the definitions, $$l(s) \le d$$ for every single choice of $$s$$.</td>
+</tr>
+<tr>
+<td>
+<input class="quiz_input" type="checkbox" name="answer[88fb7f4affbc6e4dbea62ee574641f1d][]" id="gensym_4f8093e028d25" value="58bbdeaee3938775277843a9811d2a4e" disabled>$$r\le d/2$$</td>
+<td><img src="https://class.coursera.org/assets/app/quiz/images/tick.png" title="Correct" alt="Correct"></td>
+<td>0.50</td>
+<td>The triangle is a counterexample.</td>
+</tr>
+<tr>
+<td>Total</td>
+<td></td>
+<td>2.00 / 2.00</td>
+<td></td>
+</tr>
+</table>
+</div><div class="quiz_question_body">
+<h3 class="quiz_question_number">Question 4</h3>
+<div class="quiz_question_text">Consider our algorithm for computing a topological ordering that is based on depth-first search (i.e., NOT the "straightforward solution").  Suppose we run this algorithm on a graph $$G$$ that is NOT directed acyclic.  Obviously it won't compute a topological order (since none exist).  Does it compute an ordering that minimizes the number of edges that go backward?
+
+For example, consider the four-node graph with the six directed edges $$(s,v),(s,w),(v,w),(v,t),(w,t),(t,s)$$.  Suppose the vertices are ordered $$s,v,w,t$$.  Then there is one backwards arc, the $$(t,s)$$ arc.  No ordering of the vertices has zero backwards arcs, and some have more than one.</div>
+<div class="quiz_options randomize"></div>
+<table>
+<tr>
+<th>Your Answer</th>
+<th></th>
+<th>Score</th>
+<th>Explanation</th>
+</tr>
+<tr>
+<td>
+<input class="quiz_input" type="radio" name="answer[70e49b84c00dc6c899c18aa7b2f35558][]" id="gensym_4f8093e02c50b" value="8f8cd2a858d020509e665cfa6978468f" checked disabled>Sometimes yes, sometimes no</td>
+<td><img src="https://class.coursera.org/assets/app/quiz/images/tick.png" title="Correct" alt="Correct"></td>
+<td>2.00</td>
+<td></td>
+</tr>
+<tr>
+<td>Total</td>
+<td></td>
+<td>2.00 / 2.00</td>
+<td></td>
+</tr>
+</table>
+</div><div class="quiz_question_body">
+<h3 class="quiz_question_number">Question 5</h3>
+<div class="quiz_question_text">On adding one extra edge to a directed graph $$G$$, the number of strongly connected components...?</div>
+<div class="quiz_options randomize"></div>
+<table>
+<tr>
+<th>Your Answer</th>
+<th></th>
+<th>Score</th>
+<th>Explanation</th>
+</tr>
+<tr>
+<td>
+<input class="quiz_input" type="radio" name="answer[036a86b4247c8d29f8f77c6aba918192][]" id="gensym_4f8093e02fbdc" value="7ceaa65e3f13bcf80ebce660e000bf37" checked disabled>...might remain the same</td>
+<td><img src="https://class.coursera.org/assets/app/quiz/images/tick.png" title="Correct" alt="Correct"></td>
+<td>2.00</td>
+<td>For example, the graph might already be strongly connected.</td>
+</tr>
+<tr>
+<td>Total</td>
+<td></td>
+<td>2.00 / 2.00</td>
+<td></td>
+</tr>
+</table>
+</div>
+<div class="quiz_submit_button_div">
+</div>
+
+</form>
+        </div>
+    </div>
+            <div class="hidden">
+        This page features MathJax technology to render mathematical formulae.
+        If you are using a screen reader, please visit <a href="http://www.dessci.com/en/products/mathplayer/">MathPlayer</a> to download the plugin for your browser. Please note that this is an Internet Explorer-only plugin at this time.
+    </div>
+</body>
+
+</html>
