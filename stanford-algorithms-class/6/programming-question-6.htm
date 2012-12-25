@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<!-- saved from url=(0109)file:///C:/Users/bobeff/Desktop/Algorithms%20%20Design%20and%20Analysis,%20Part%202%20-%20Quiz%20Feedback.htm -->
+<html lang="en-US" class="wf-crimsontext-n4-active wf-active"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta charset="utf-8">
+<title>Algorithms: Design and Analysis, Part 2 - Quiz Feedback</title>
+<h2>
+Feedback — Programming Assignment #1</h2>
+
+
+<p class="quiz_feedback">You submitted this quiz on <strong>Tue 25 Dec 2012  6:25 PM EET</strong>. You got a score of <strong>5.00</strong> out of <strong>5.00</strong>. </p>
+<form method="post" id="quiz_form">
+<div class="quiz_question_body">
+<h3 class="quiz_question_number">Question 1</h3>
+<div style="float:none;text-align:left;width:100%"> <div class="quiz_question_text">In this programming problem and the next you'll code up the greedy algorithms from lecture for minimizing the weighted sum of completion times..
+Download the text file <a href="http://spark-public.s3.amazonaws.com/algo2/datasets/jobs.txt">here</a>.
+This file describes a set of jobs with positive and integral weights and lengths.  It has the format
+<p>
+[number_of_jobs]<br>
+[job_1_weight] [job_1_length]<br>
+[job_2_weight] [job_2_length]<br>
+...<br>
+For example, the third line of the file is "74 59", indicating that the second job has weight 74 and length 59.
+You should NOT assume that edge weights or lengths are distinct.
+</p>
+<p>
+Your task in this problem is to run the greedy algorithm that schedules jobs in decreasing order of the difference (weight - length).  Recall from lecture that this algorithm is not always optimal.  IMPORTANT: if two jobs have equal difference (weight - length), you should schedule the job with higher weight first.  Beware: if you break ties in a different way, you are likely to get the wrong answer.  You should report the sum of weighted completion times of the resulting schedule --- a positive integer --- in the box below. 
+</p>
+<p>
+ADVICE: If you get the wrong answer, try out some small test cases to debug your algorithm (and post your test cases to the discussion forum)!</p>
+</div>
+</div>
+<label for="gensym_50d9d36bcfb5c" class="hidden">Answer for Question 1</label><div class="quiz_options"></div>
+<div style="padding:5px">
+<strong>You entered:</strong>
+</div>
+<textarea id="gensym_50d9d36bcfb5c" class="quiz_input" name="answer[5e0e617358bdba19dc205d54c131baa9][answer]" readonly="">69119377652</textarea><table class="table">
+<tbody><tr>
+<th>Your Answer</th>
+<th></th>
+<th>Score</th>
+<th>Explanation</th>
+</tr>
+<tr>
+<td class="student_answer">69119377652</td>
+<td><img src="file:///C:/Users/bobeff/Desktop/Algorithms%20%20Design%20and%20Analysis,%20Part%202%20-%20Quiz%20Feedback_files/tick.png"></td>
+<td>2.00</td>
+<td></td>
+</tr>
+<tr>
+<td>Total</td>
+<td></td>
+<td>2.00 / 2.00</td>
+<td></td>
+</tr>
+</tbody></table>
+</div><div class="quiz_question_body">
+<h3 class="quiz_question_number">Question 2</h3>
+<div style="float:none;text-align:left;width:100%"> <div class="quiz_question_text">For this problem, use the same data set as in the previous problem.
+Your task now is to run the greedy algorithm that schedules jobs (optimally) in decreasing order of the ratio (weight/length).  In this algorithm, it does not matter how you break ties.  You should report the sum of weighted completion times of the resulting schedule --- a positive integer --- in the box below. 
+</div>
+</div>
+<label for="gensym_50d9d36bd365b" class="hidden">Answer for Question 2</label><div class="quiz_options"></div>
+<div style="padding:5px">
+<strong>You entered:</strong>
+</div>
+<textarea id="gensym_50d9d36bd365b" class="quiz_input" name="answer[45dd5d47f531e25ea39ed24d3eaf6387][answer]" readonly="">67311454237</textarea><table class="table">
+<tbody><tr>
+<th>Your Answer</th>
+<th></th>
+<th>Score</th>
+<th>Explanation</th>
+</tr>
+<tr>
+<td class="student_answer">67311454237</td>
+<td><img src="file:///C:/Users/bobeff/Desktop/Algorithms%20%20Design%20and%20Analysis,%20Part%202%20-%20Quiz%20Feedback_files/tick.png"></td>
+<td>1.00</td>
+<td></td>
+</tr>
+<tr>
+<td>Total</td>
+<td></td>
+<td>1.00 / 1.00</td>
+<td></td>
+</tr>
+</tbody></table>
+</div><div class="quiz_question_body">
+<h3 class="quiz_question_number">Question 3</h3>
+<div style="float:none;text-align:left;width:100%"> <div class="quiz_question_text">In this programming problem you'll code up Prim's minimum spanning tree algorithm.
+Download the text file <a href="http://spark-public.s3.amazonaws.com/algo2/datasets/edges.txt">here</a>.
+This file describes an undirected graph with integer edge costs.  It has the format
+<p>
+[number_of_nodes] [number_of_edges]<br>
+[one_node_of_edge_1] [other_node_of_edge_1] [edge_1_cost]<br>
+[one_node_of_edge_2] [other_node_of_edge_2] [edge_2_cost]<br>
+...<br>
+For example, the third line of the file is "2 3 -8874", indicating that there is an edge connecting vertex #2 and vertex #3 that has cost -8874. 
+You should NOT assume that edge costs are positive, nor should you assume that they are distinct.
+</p>
+<p>
+Your task is to run Prim's minimum spanning tree algorithm on this graph.  You should report the overall cost of a minimum spanning tree --- an integer, which may or may not be negative --- in the box below. 
+</p>
+<p>
+IMPLEMENTATION NOTES: This graph is small enough that the straightforward O(mn) time implementation of Prim's algorithm should work fine. OPTIONAL: For those of you seeking an additional challenge, try implementing a heap-based version. The simpler approach, which should already give you a healthy speed-up, is to maintain relevant edges in a heap (with keys = edge costs).  The superior approach stores the unprocessed vertices in the heap, as described in lecture.  Note this requires a heap that supports deletions, and you'll probably need to maintain some kind of mapping between vertices and their positions in the heap.</p>
+</div>
+</div>
+<label for="gensym_50d9d36bd6f38" class="hidden">Answer for Question 3</label><div class="quiz_options"></div>
+<div style="padding:5px">
+<strong>You entered:</strong>
+</div>
+<textarea id="gensym_50d9d36bd6f38" class="quiz_input" name="answer[0524a0aa4266be1759a6cb78e06e1f6f][answer]" readonly="">-3612829</textarea><table class="table">
+<tbody><tr>
+<th>Your Answer</th>
+<th></th>
+<th>Score</th>
+<th>Explanation</th>
+</tr>
+<tr>
+<td class="student_answer">-3612829</td>
+<td><img src="file:///C:/Users/bobeff/Desktop/Algorithms%20%20Design%20and%20Analysis,%20Part%202%20-%20Quiz%20Feedback_files/tick.png"></td>
+<td>2.00</td>
+<td></td>
+</tr>
+<tr>
+<td>Total</td>
+<td></td>
+<td>2.00 / 2.00</td>
+<td></td>
+</tr>
+</tbody></table>
+</div>    <div class="quiz_submit_button_div">
+        </div>
+
+</form>
+</body></html>
