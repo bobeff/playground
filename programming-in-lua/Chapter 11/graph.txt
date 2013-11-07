@@ -1,0 +1,15 @@
+Dublin London 468
+New_York London 5806
+London Amsterdam 339
+London Paris 323
+New_York Paris 5968
+New_York Madrid 5565
+Amsterdam Frankfurt 387
+Frankfurt Berlin 452
+Paris Frankfurt 484
+Madrid Zurich 1226
+Zurich Vienna 534
+Madrid Rome 1371
+Zurich Rome 694
+Paris Zurich 484
+Frankfurt Vienna 524
