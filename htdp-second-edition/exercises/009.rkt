@@ -13,7 +13,7 @@
 
 (require 2htdp/image)
 
-(include "data/cat-image.rkt")
+(include "../data/cat-image.rkt")
 
 (define (abs-complex complex-number)
   (sqrt (+ (sqr (real-part complex-number)) (sqr (imag-part complex-number)))))

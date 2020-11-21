@@ -6,7 +6,7 @@
 
 (require 2htdp/image rackunit)
 
-(include "data/cat-image.rkt")
+(include "../data/cat-image.rkt")
 
 (define (image-classify image)
   (let ((width (image-width image))

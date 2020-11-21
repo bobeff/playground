@@ -5,7 +5,7 @@
 
 (require rackunit 2htdp/image)
 
-(include "data/cat-image.rkt")
+(include "../data/cat-image.rkt")
 
 (define (image-area image)
   (* (image-width image) (image-height image)))

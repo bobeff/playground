@@ -4,7 +4,7 @@
 
 (require 2htdp/image)
 
-(include "data/cat-image.rkt")
+(include "../data/cat-image.rkt")
 
 (define (pixels-count image)
   (* (image-width image) (image-height image)))

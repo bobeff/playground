@@ -11,7 +11,7 @@
 
 (require 2htdp/image)
 
-(include "data/cat-image.rkt")
+(include "../data/cat-image.rkt")
 
 (define (image-kind? image)
   (let ((width (image-width image))

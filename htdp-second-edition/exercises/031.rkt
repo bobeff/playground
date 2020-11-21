@@ -70,11 +70,16 @@
                       (read-file in-lst)
                       (read-file in-signature))))
 
-(main "data/names/ivan-first-name.txt" "data/names/bobev-last-name.txt"
-      "data/names/petrov-signature.txt" 'stdout)
+(main "../data/names/ivan-first-name.txt"
+      "../data/names/bobev-last-name.txt"
+      "../data/names/petrov-signature.txt"
+      'stdout)
 
-(main "data/names/matthew-first-name.txt" "data/names/fisler-last-name.txt"
-      "data/names/felleisen-signature.txt" 'stdout)
+(main "../data/names/matthew-first-name.txt"
+      "../data/names/fisler-last-name.txt"
+      "../data/names/felleisen-signature.txt" 'stdout)
 
-(main "data/names/matthew-first-name.txt" "data/names/fisler-last-name.txt"
-      "data/names/petrov-signature.txt" "letter.txt")
+(main "../data/names/matthew-first-name.txt"
+      "../data/names/fisler-last-name.txt"
+      "../data/names/petrov-signature.txt"
+      "letter.txt")
