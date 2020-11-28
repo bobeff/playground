@@ -1,1 +1,0 @@
-Here are tasks, tests, my and author solutions to the tasks from some Sofia University FMI courses.

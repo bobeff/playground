@@ -1,6 +1,6 @@
-# How to Design Programs - exercises solutions
+# How to Design Programs - Second Edition
 
-Those are my solutions of the exercises from the second edition of the book [How to Design Programs][1] by [Matthias Felleisen][2], [Robert Bruce Findler][3], [Matthew Flatt][4] and [Shriram Krishnamurthi][5].
+Solutions of the exercises from the second edition of the book [How to Design Programs][1] by [Matthias Felleisen][2], [Robert Bruce Findler][3], [Matthew Flatt][4] and [Shriram Krishnamurthi][5].
 
 [1]: https://htdp.org/
 [2]: https://en.wikipedia.org/wiki/Matthias_Felleisen
