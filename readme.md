@@ -5,6 +5,7 @@ In this repository I will commit sources from different exercises and other smal
 * [Sofia University: Faculty of Mathematics and Informatics Classes][1]
 * [How to Design Programs - Second Edition][2]
 * [Nim Basics][3]
+* [Programming Interviews Exposed - Fourth Edition][7]
 * [Programming in Lua - Third Edition][4]
 * [Project Euler][5]
 * [Coursera Algorithms class offered by Stanford University][6]
@@ -15,3 +16,4 @@ In this repository I will commit sources from different exercises and other smal
 [4]: https://github.com/bobeff/playground/tree/master/programming-in-lua
 [5]: https://github.com/bobeff/playground/tree/master/project-euler
 [6]: https://github.com/bobeff/playground/tree/master/stanford-algorithms-class
+[7]: https://github.com/bobeff/playground/tree/master/pie-4th-edition
