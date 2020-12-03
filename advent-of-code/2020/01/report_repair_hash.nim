@@ -5,7 +5,7 @@ const target = 2020
 # All input numbers are unique and because of this HashSet works.
 
 proc readInput(): HashSet[uint] =
-  for line in "report_repair.txt".lines:
+  for line in "input".lines:
     result.incl line.parseUInt
 
 proc twoSum(numbers: HashSet[uint], skipNumber, target: uint): uint =

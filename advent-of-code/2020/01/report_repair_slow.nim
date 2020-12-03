@@ -3,7 +3,7 @@ import strutils
 const target = 2020
 
 proc readInput(): seq[uint] =
-  for line in "report_repair.txt".lines:
+  for line in "input".lines:
     result.add line.parseUInt
 
 proc twoSum(data: seq[uint]): uint =

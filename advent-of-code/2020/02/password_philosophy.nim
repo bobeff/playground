@@ -1,7 +1,5 @@
 import strscans
 
-const inputFileName = "password_philosophy.txt"
-
 proc isPartOnePasswordValid(
     password: string, minLetterCount, maxLetterCount: int, letter: char): bool =
   var letterCount = 0
@@ -20,7 +18,7 @@ var
   partOneValidPasswordsCount = 0
   partTwoValidPasswordsCount = 0
 
-for line in inputFileName.lines:
+for line in "input".lines:
   var
     first, second: int
     letter, password: string
