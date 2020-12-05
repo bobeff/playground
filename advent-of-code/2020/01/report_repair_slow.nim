@@ -1,9 +1,11 @@
 import strutils
 
-const target = 2020
+const
+  inputFileName = "input.txt"
+  target = 2020
 
-proc readInput(): seq[uint] =
-  for line in "input".lines:
+proc readInput(inputFile: string): seq[uint] =
+  for line in inputFile.lines:
     result.add line.parseUInt
 
 proc twoSum(data: seq[uint]): uint =
@@ -21,6 +23,6 @@ proc threeSum(data: seq[uint]): uint =
         if data[i] + data[j] + data[k] == target:
           return data[i] * data[j] * data[k]
 
-let data = readInput()
+let data = readInput(inputFileName)
 echo data.twoSum
 echo data.threeSum

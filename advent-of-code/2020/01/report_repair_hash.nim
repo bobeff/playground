@@ -1,11 +1,13 @@
 import sets, strutils
 
-const target = 2020
+const
+  inputFileName = "input.txt"
+  target = 2020
 
 # All input numbers are unique and because of this HashSet works.
 
-proc readInput(): HashSet[uint] =
-  for line in "input".lines:
+proc readInput(inputFile: string): HashSet[uint] =
+  for line in inputFile.lines:
     result.incl line.parseUInt
 
 proc twoSum(numbers: HashSet[uint], skipNumber, target: uint): uint =
@@ -25,6 +27,6 @@ proc threeSum(numbers: HashSet[uint]): uint =
     if y != 0:
       return x * y
 
-let numbers = readInput()
+let numbers = readInput(inputFileName)
 echo twoSum(numbers, 0, target)
 echo threeSum(numbers)

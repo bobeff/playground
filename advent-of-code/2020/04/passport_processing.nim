@@ -1,5 +1,8 @@
 import tables, sets, strutils
 
+const
+  inputFileName = "input.txt"
+
 type
   Passport = Table[string, string]
 
@@ -146,6 +149,6 @@ proc validPassportsCountPartTwo(passports: seq[Passport]): uint =
     if validateFields(passport) and validateValues(passport):
       result.inc
 
-let passports = parseInput("input")
+let passports = parseInput(inputFileName)
 echo validPassportsCountPartOne(passports)
 echo validPassportsCountPartTwo(passports)

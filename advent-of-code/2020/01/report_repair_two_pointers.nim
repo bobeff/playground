@@ -1,9 +1,11 @@
 import strutils, algorithm
 
-const target = 2020
+const
+  inputFileName = "input.txt"
+  target = 2020
 
-proc readInput(): seq[uint] =
-  for line in "input".lines:
+proc readInput(inputFile: string): seq[uint] =
+  for line in inputFile.lines:
     result.add line.parseUInt
 
 proc twoSum(numbers: seq[uint], startIndex, target: uint): uint =
@@ -28,7 +30,7 @@ proc threeSum(numbers: seq[uint]): uint =
     if twoSumProduct != 0:
       return twoSumProduct * numbers[i]
 
-var numbers = readInput()
+var numbers = readInput(inputFileName)
 numbers.sort                    # O(n * log(n)) complexity
 echo twoSum(numbers, 0, target) # O(n * log(n)) sum complexity
 echo threeSum(numbers)          # O(n^2) sum complexity

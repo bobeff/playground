@@ -1,7 +1,10 @@
 import strutils
 
-proc readInput(): seq[string] =
-  for line in "input".lines:
+const
+  inputFileName = "input.txt"
+
+proc readInput(inputFile: string): seq[string] =
+  for line in inputFile.lines:
     result.add line.strip
 
 proc solve(slope: seq[string], slopeX, slopeY: int): uint =
@@ -15,7 +18,7 @@ proc solve(slope: seq[string], slopeX, slopeY: int): uint =
     currentX = (currentX + slopeX) mod width
     currentY += slopeY
 
-let input = readInput()
+let input = readInput(inputFileName)
 let slope1x1 = solve(input, 1, 1)
 let slope3x1 = solve(input, 3, 1)
 let slope5x1 = solve(input, 5, 1)
