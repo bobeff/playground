@@ -3,6 +3,7 @@
 In this repository I will commit sources from different exercises and other small tasks.
 
 * [Advent of Code - online competition][8]
+* [Exercism][9]
 * [Sofia University: Faculty of Mathematics and Informatics Classes][1]
 * [How to Design Programs - Second Edition][2]
 * [Nim Basics][3]
@@ -19,3 +20,4 @@ In this repository I will commit sources from different exercises and other smal
 [6]: https://github.com/bobeff/playground/tree/master/stanford-algorithms-class
 [7]: https://github.com/bobeff/playground/tree/master/pie-4th-edition
 [8]: https://github.com/bobeff/playground/tree/master/advent-of-code
+[9]: https://github.com/bobeff/playground/tree/master/exercism
