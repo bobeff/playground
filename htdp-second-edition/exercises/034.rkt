@@ -13,7 +13,7 @@
 ; given: " world", expected: " "
 (define (string-first s) (substring s 0 1))
 
-(check-exn exn:fail? (thunk (string-first "" )))
+(check-exn exn:fail? (thunk (string-first "")))
 (check-equal? (string-first "a") "a")
 (check-equal? (string-first "hello") "h")
 (check-equal? (string-first " world") " ")
