@@ -6,6 +6,7 @@ In this repository I will commit sources from different exercises and other smal
 * [Exercism][9]
 * [Sofia University: Faculty of Mathematics and Informatics Classes][1]
 * [How to Design Programs - Second Edition][2]
+* [MNKnowledgeBrainTeaser competition][11]
 * [Nim Basics][3]
 * [Programming Interviews Exposed - Fourth Edition][7]
 * [Programming in Lua - Third Edition][4]
@@ -23,3 +24,4 @@ In this repository I will commit sources from different exercises and other smal
 [8]: https://github.com/bobeff/playground/tree/master/advent-of-code
 [9]: https://github.com/bobeff/playground/tree/master/exercism
 [10]: https://github.com/bobeff/playground/tree/master/rust/first-steps-with-rust
+[11]: https://github.com/bobeff/playground/tree/master/MNKnowledgeBrainTeaser
