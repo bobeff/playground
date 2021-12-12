@@ -1,4 +1,4 @@
-import strutils, sequtils, algorithm
+import sequtils, algorithm
 
 proc isLowPoint(hightmap: seq[string], r, c: int): bool =
   if r - 1 >= 0 and hightmap[r - 1][c] <= hightmap[r][c]:
