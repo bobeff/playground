@@ -3,6 +3,7 @@
 In this repository I will commit sources from different exercises and other small tasks.
 
 * [Advent of Code - online competition][8]
+* [Eloquent JavaScript - Third Edition][12]
 * [Exercism][9]
 * [Sofia University: Faculty of Mathematics and Informatics Classes][1]
 * [How to Design Programs - Second Edition][2]
@@ -25,3 +26,4 @@ In this repository I will commit sources from different exercises and other smal
 [9]: https://github.com/bobeff/playground/tree/master/exercism
 [10]: https://github.com/bobeff/playground/tree/master/rust/first-steps-with-rust
 [11]: https://github.com/bobeff/playground/tree/master/MNKnowledgeBrainTeaser
+[12]: https://github.com/bobeff/playground/tree/master/eloquent-java-script
