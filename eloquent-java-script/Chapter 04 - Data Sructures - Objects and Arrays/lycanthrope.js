@@ -1,4 +1,4 @@
-require("./journal");;
+require("./journal");
 
 // console.log(JOURNAL);
 
