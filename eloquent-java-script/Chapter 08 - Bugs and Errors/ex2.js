@@ -1,4 +1,7 @@
 /*
+Exercise 2: The Locked Box
+--------------------------
+
 Consider the following (rather contrived) object:
 
 const box = new class {
