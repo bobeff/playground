@@ -56,7 +56,7 @@ console.log("Road graph");
 console.log(roadGraph);
 console.log();
 
-var VillageState = class VillageState {
+class VillageState {
   constructor(place, parcels) {
     this.place = place;
     this.parcels = parcels;
