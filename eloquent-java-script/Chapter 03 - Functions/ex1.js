@@ -1,5 +1,6 @@
 /*
-Minimum
+Exercise 1: Minimum
+-------------------
 
 The previous chapter introduced the standard function Math.min that returns its
 smallest argument. We can write a function like that ourselves now. Define the

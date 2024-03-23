@@ -1,5 +1,6 @@
 /*
-A list
+Exercise 3: A list
+------------------
 
 As generic blobs of values, objects can be used to build all sorts of data
 structures. A common data structure is the list (not to be confused with arrays).

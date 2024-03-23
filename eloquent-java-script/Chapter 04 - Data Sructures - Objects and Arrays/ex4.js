@@ -1,5 +1,6 @@
 /*
-Deep comparison
+Exercise 4: Deep comparison
+---------------------------
 
 The == operator compares objects by identity, but sometimes you’d prefer to
 compare the values of their actual properties.

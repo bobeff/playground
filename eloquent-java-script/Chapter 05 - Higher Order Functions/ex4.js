@@ -1,5 +1,6 @@
 /*
-Dominant writing direction
+Exercise 4: Dominant writing direction
+--------------------------------------
 
 Write a function that computes the dominant writing direction in a string of
 text. Remember that each script object has a direction property that can be

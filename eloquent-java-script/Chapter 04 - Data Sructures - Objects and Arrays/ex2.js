@@ -1,4 +1,7 @@
 /*
+Exercise 2: Reversing an array
+------------------------------
+
 Arrays have a reverse method that changes the array by inverting the order in
 which its elements appear. For this exercise, write two functions, reverseArray
 and reverseArrayInPlace. The first, reverseArray, should take an array as

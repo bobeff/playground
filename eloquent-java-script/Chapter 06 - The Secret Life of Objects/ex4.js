@@ -1,6 +1,6 @@
 /*
-Borrowing a method
--------------------
+Exercise 4: Borrowing a method
+------------------------------
 
 Earlier in this chapter I mentioned that an object's hasOwnProperty ca be used
 as a more robust alternative to the in operator when you want to ignore the

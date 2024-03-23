@@ -1,5 +1,6 @@
 /*
-A vector type
+Exercise 1: A vector type
+-------------------------
 
 Write a class Vec that represents a vector in two-dimensional space. It takes x
 and y parameters (numbers), which it should save to properties of the same name.

@@ -1,5 +1,6 @@
 /*
-Everything
+Exercise 3: Everything
+----------------------
 
 Arrays also have an every method analogous to the some method. This method
 returns true when the given function returns true for every element in the

@@ -1,5 +1,6 @@
 /*
-The sum of a range
+Exercise 1: The sum of a range
+------------------------------
 
 The introduction of this book alluded to the following as a nice way to compute
 the sum of a range of numbers:

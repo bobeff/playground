@@ -1,5 +1,6 @@
 /*
-Your own loop
+Exercise 2: Your own loop
+-------------------------
 
 Write a higher-order function loop that provides something like a for loop
 statement. It should take a value, a test function, an update function, and a

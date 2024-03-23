@@ -1,5 +1,6 @@
 /*
-Bean counting
+Exercise 3: Bean counting
+-------------------------
 
 You can get the Nth character, or letter, from a string by writing [N] after the
 string (for example, string[2]). The resulting value will be a string containing

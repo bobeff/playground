@@ -1,6 +1,6 @@
 /*
 Exercise 2: Groups
--------------------
+------------------
 
 The standard JavaScript environment provides another data structure called Set.
 Like an instance of Map, a set holds a collection of values. Unlike Map, it does
@@ -20,7 +20,7 @@ whether two values are the same.
 Give the class a static from method that takes an iterable object as argument.
 
 Exercise 3: Iterable groups
-----------------------------
+---------------------------
 
 Make the Group class from the previous exercise iterable. Refer to the section
 about the iterator interface earlier in the chapter if you aren’t clear on the
